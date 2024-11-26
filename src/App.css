@@ -3,7 +3,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #205cd5;
   min-height: 20vh;
   font-size: calc(10px + 2vmin);
   color: white;
@@ -13,6 +13,14 @@
 button {
   font-size: calc(10px + 2vmin);
   margin: 5px;
+  border: black 5px solid;
+  background-color: red;
+  color: white;
+}
+
+button:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.1);
 }
 
 input {
