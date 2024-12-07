@@ -10,11 +10,10 @@ import FormInput from "./components/FormInput";
 import TodoList from "./components/TodoList";
 import "./App.css";
 
-
-
 function App() {
   // Sets state for the active component
   const [activeComponent, setActiveComponent] = useState("counter");
+  const handleSetComponent = (component) => setActiveComponent(component);
 
   return (
     <div className="App">
@@ -22,13 +21,13 @@ function App() {
       <div className="App-header">
         <h1>Performance Assessment 3.4</h1>
         <h3>Task Menu</h3>
-        <button onClick={() => setActiveComponent("counter")}>
+        <button onClick={() => handleSetComponent("counter")}>
           Task 1 - Counter
         </button>
-        <button onClick={() => setActiveComponent("form")}>
+        <button onClick={() => handleSetComponent("form")}>
           Task 2 - Form Input
         </button>
-        <button onClick={() => setActiveComponent("todo")}>
+        <button onClick={() => handleSetComponent("todo")}>
           Task 3 - Todo List
         </button>
       </div>
